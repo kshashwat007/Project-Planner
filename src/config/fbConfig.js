@@ -1,9 +1,10 @@
 import firebase from 'firebase/app'
 import 'firebase/firestore'
+import 'firebase/analytics'
 import 'firebase/auth'
 
 // Your web app's Firebase configuration
-var firebaseConfig = {
+export const fbConfig = {
     apiKey: "AIzaSyDVNrMQqbOlK7tR_B_5gpOdzhRlveNNWp8",
     authDomain: "project-planner-53d2c.firebaseapp.com",
     databaseURL: "https://project-planner-53d2c.firebaseio.com",
@@ -14,8 +15,8 @@ var firebaseConfig = {
     measurementId: "G-N750FYDNCD"
   };
   // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+  firebase.initializeApp(fbConfig);
   firebase.analytics();
-  firebase.firestore().settings({ timestampsInSnapshots: true })
+  firebase.firestore();
 
   export default firebase
