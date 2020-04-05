@@ -12,7 +12,9 @@ export const fbConfig = {
     storageBucket: "project-planner-53d2c.appspot.com",
     messagingSenderId: "301957039812",
     appId: "1:301957039812:web:a5639b2f3bb21546e02b91",
-    measurementId: "G-N750FYDNCD"
+    measurementId: "G-N750FYDNCD",
+    userProfile: 'users',
+    useFirestoreForProfile: true
   };
   // Initialize Firebase
   firebase.initializeApp(fbConfig);
